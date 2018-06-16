@@ -1,0 +1,59 @@
+def average(grades):
+    i = 0
+    total = 0
+    while i < len(grades):
+      total += grades[i]
+      i += 1
+    if i == len(grades):
+        av = total/float(i) 
+        print(av)
+
+def taverage(grades):
+  i = 0
+  total = 0
+  while i < len(grades):
+    total += grades[i]
+    i += 1
+    if i == len(grades):
+      print(total)
+
+def conversion(grades, aType, typeConversion):
+  n = len(typeConversion)
+  i = 0
+  while i < n:
+    if aType == i:
+      j = 0
+      wgrade = 0
+      k = len(grades)
+      while j < k:
+        wgrade += grades[j] * typeConversion[i]
+        j += 1
+      if j == k:
+        return wgrade/float(k)
+    i += 1
+a
+Class = []
+
+#grades
+test = [80, 85, 75, 100]
+hw = [100, 100, 90]
+quiz = [50, 90, 90]
+
+#aTypes
+Test = 0
+HW = 1
+Quiz = 2
+
+#typeConversions
+types = [.4, .3, .3]
+
+
+wtest = conversion(test, Test, types)
+wHw = conversion(hw, HW, types)
+wQuiz = conversion(quiz, Quiz, types)
+print(wtest)
+print(wHw)
+print(wQuiz)
+
+THQ = [wtest, wHw, wQuiz]
+taverage(THQ)
